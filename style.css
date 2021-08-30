@@ -1,0 +1,165 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 150px auto;
+}
+
+.tabs ul {
+    display: flex;
+    background: rgb(53, 87, 125);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: lightgray;
+}
+
+.tabs li {
+    width: 25%;
+    height: 55px;
+    padding: 15px;
+    border-right: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    position: relative; /*not needed???*/
+    transition: all 0.2s ease;
+    overflow: hidden;
+    cursor: url('/DestinyUtil/images/destiny.png'), auto;
+}
+
+.tabs ul li:last-child {
+    border-right: 0px;
+}
+
+.tabs ul li:hover,
+.tabs ul li.active {
+    background: rgb(20, 30, 48);
+}
+
+.contentWrapper {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contentWrapper p {
+    margin-bottom: 10px; /*not needed???*/
+    font-size: 25px;
+}
+
+body {
+    background: linear-gradient(-45deg, rgb(53, 87, 125), rgb(20, 30, 48));
+    background-attachment: fixed;
+    height: 100%;
+}
+
+div, p, h1, input {
+    text-align: center;
+}
+
+#displayData {
+    border: medium solid white;
+    padding: 2em;
+    margin: 2em;
+}
+
+input {
+    margin: 2em;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+button.disabled {
+    pointer-events: none;
+    background-color: rgb(86, 86, 95);
+    border-radius: 8px;
+    border-bottom: 4px solid rgb(56, 56, 65);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    cursor: not-allowed;
+}
+
+button {
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    background-color: rgb(90, 90, 255);
+    border-radius: 8px;
+    border-bottom: 4px solid rgb(70, 70, 200);
+    padding: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    cursor: url('/DestinyUtil/images/destiny.png'), auto;
+}
+
+button:hover {
+    background-color: rgb(115, 115, 255);
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid rgb(70, 70, 255);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    cursor: url('/DestinyUtil/images/destiny.png'), auto;
+}
+
+button:active {
+    background-color: rgb(70, 70, 200);
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid rgb(70, 70, 200);
+    color: #CCC;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    cursor: url('/DestinyUtil/images/destiny.png'), auto;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+}
+
+.content a:hover {
+    background: rgb(53, 87, 125);
+}
+
+.content a:active {
+    background: rgb(53, 87, 125);
+}
+
+#xurButton, #adaButton, #bansheeButton, #authButton {
+    margin: 10px;
+}

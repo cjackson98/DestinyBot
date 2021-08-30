@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Destiny Util</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/destiny.png"/>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="tabs">
+                <ul>
+                    <li class="active">OAuth</li>
+                    <li>Xur</li>
+                    <li>Ada-01</li>
+                    <li>Banshee</li>
+                </ul>
+            </div>
+
+            <div class="contentWrapper">
+                <div class="content" style="display: block;">
+                    <button id="authButton">OAuth</button>
+                    <p id="authContent"></p>
+                </div>
+                <div class="content" style="display: none;">
+                    <button id="xurButton">Xur Inventory</button>
+                    <p id="xurContent"></p>
+                </div>
+                <div class="content" style="display: none;">
+                    <button id="adaButton">Daily Armor Mods</button>
+                    <p id="adaContent"></p>
+                </div>
+                <div class="content" style="display: none;">
+                    <button id="bansheeButton">Weekly Weapons</button>
+                    <p id="bansheeContent"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/destiny.js"></script>
+    </body>
+</html>
